@@ -4,7 +4,9 @@ def func1(nome):
 	import math
 	import time
 	import turtle
+	import json
 
+	#json.dumps(data)
 	aa = requests.get("http://www.uol.com.br")
 
 	print ("tamanho de aa ",len(aa.text))
@@ -25,6 +27,14 @@ def func3(): #testando identacao com espacos
  if True:
   print ('a')
   print('b')
+
+def funcao_for_range(last):
+	for i in range(1,last):
+		print(i)
+	else:
+		print(i+10)
+
+funcao_for_range(raw_input("numero:"))
 
 func1("arq.txt")
 func2()
