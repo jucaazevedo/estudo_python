@@ -7,6 +7,8 @@ def func1(nome):
 	import json
 
 	#json.dumps(data)
+
+	a = re.search(".*","juca")
 	aa = requests.get("http://www.uol.com.br")
 
 	print ("tamanho de aa ",len(aa.text))
