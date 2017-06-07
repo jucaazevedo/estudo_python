@@ -1,11 +1,16 @@
 def func1(nome):
 	import requests
+	import re
+	import math
+	import time
+	import turtle
+
 	aa = requests.get("http://www.uol.com.br")
 
 	print ("tamanho de aa ",len(aa.text))
 	with open(nome,"r") as file:
 		for line in file:
-			words = line.split()
+			words = line.split() #default de split eh espaco
 			print("words = ",words)
 			print(words[0])
 			print(len(words))
@@ -14,9 +19,15 @@ def func1(nome):
 def func2():
 	if True:
 		print(1)
-print(2)
+	print(2)
+
+def func3(): #testando identacao com espacos
+ if True:
+  print ('a')
+  print('b')
 
 func1("arq.txt")
 func2()
+func3()
 
 
