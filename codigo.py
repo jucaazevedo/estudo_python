@@ -7,6 +7,11 @@ def func1(nome):
 	import json
 
 	#json.dumps(data)
+	x = 'palavra'
+	print(len(x))
+	print(x.upper())
+	if x[2:4] == "la":
+		print("deu certo")
 
 	a = re.search(".*","juca")
 	aa = requests.get("http://www.uol.com.br")
@@ -31,15 +36,16 @@ def func3(): #testando identacao com espacos
   print('b')
 
 def funcao_for_range(last):
-	for i in range(1,last):
+	for i in range(1,int(last)):
 		print(i)
 	else:
 		print(i+10)
 
-funcao_for_range(raw_input("numero:"))
 
 func1("arq.txt")
 func2()
 func3()
+
+funcao_for_range(input("numero:"))
 
 
