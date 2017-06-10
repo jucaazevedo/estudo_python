@@ -30,13 +30,13 @@ def func3(): #testando identacao com espacos
   print ('a')
   print('b')
 
-def funcao_for_range(last):
+def funcao_for_range(int(last)):
 	for i in range(1,last):
 		print(i)
 	else:
 		print(i+10)
 
-funcao_for_range(raw_input("numero:"))
+funcao_for_range(input("numero:"))
 
 func1("arq.txt")
 func2()
