@@ -38,6 +38,8 @@ def func_string():
 		print('maiusculas')
 
 	uma_string = 'abacaxi'
+	uma_string.upper() //tem que atribuir senao nao funciona!
+	print("uma string = ",uma_string)
 	l1 = list(uma_string)
 
 	lista3 = ['uma','frase','para','teste']
@@ -50,6 +52,7 @@ def func_string():
 	print(x.strip())
 	print(len(x))
 	print(x.upper())
+	print('x = ', x)
 	if x[2:4] == "la":
 		print("deu certo")
 
@@ -85,6 +88,7 @@ func_arquivo("arq.txt")
 
 func_dict()
 func_json()
+func_string()
 func_lista()
 func_imports()
 func_re()
