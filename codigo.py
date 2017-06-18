@@ -38,7 +38,7 @@ def func_string():
 		print('maiusculas')
 
 	uma_string = 'abacaxi'
-	uma_string.upper() //tem que atribuir senao nao funciona!
+	uma_string.upper() #tem que atribuir senao nao funciona!
 	print("uma string = ",uma_string)
 	l1 = list(uma_string)
 
@@ -65,6 +65,11 @@ def func_requests():
 	aa = requests.get("http://www.uol.com.br")
 
 	print ("tamanho de aa ",len(aa.text))
+
+	r = requests.get("https://corp-git.ccorp.local/api/v4/projects",verify=False,headers={"PRIVATE-TOKEN":"JfZAVMMuSTh3qyrDuywe"})
+	print ("tipo = ",type(r))
+	print ("dir = ",dir(r))
+	print("gitlab ",r.status_code)
 
 def func_arquivo(nome):
 	with open(nome,"r") as file:
