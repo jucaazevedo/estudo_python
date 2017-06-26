@@ -83,6 +83,7 @@ def func_arquivo(nome):
 
 def funcao_for_range(last):
 	print(type(last))
+	#for i in range(int(last)): 
 	for i in range(0,int(last)):
 		print(i)
 	else:
