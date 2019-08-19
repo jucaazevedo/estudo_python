@@ -59,6 +59,7 @@ def func_string():
 def func_re():
 	import re
 	a = re.search(".*","juca")
+	print('expressao regular = ',a);
 
 def func_requests():
 	import requests
@@ -66,10 +67,10 @@ def func_requests():
 
 	print ("tamanho de aa ",len(aa.text))
 
-	r = requests.get("https://corp-git.ccorp.local/api/v4/projects",verify=False,headers={"PRIVATE-TOKEN":"JfZAVMMuSTh3qyrDuywe"})
-	print ("tipo = ",type(r))
-	print ("dir = ",dir(r))
-	print("gitlab ",r.status_code)
+	r = requests.get("http://www.uol.com.br")
+	print ("type(r) = ",type(r))
+	print ("dir(r) = ",dir(r))
+	print("r.status_code = ",r.status_code)
 
 def func_arquivo(nome):
 	with open(nome,"r") as file:
@@ -89,15 +90,15 @@ def funcao_for_range(last):
 	else:
 		print("depois do loop do for = ",i)
 
-func_arquivo("arq.txt")
+#func_arquivo("arq.txt")
 
 
-func_dict()
-func_json()
-func_string()
-func_lista()
-func_imports()
-func_re()
+#func_dict()
+#func_json()
+#func_string()
+#func_lista()
+#func_imports()
+#func_re()
 func_requests()
 
-funcao_for_range(input("numero:"))
+#funcao_for_range(input("numero:"))
