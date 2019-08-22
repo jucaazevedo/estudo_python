@@ -1,3 +1,5 @@
+variavel_solta = 10
+
 def func_json():
 	import json
 	#json.dumps(data)
@@ -87,7 +89,7 @@ def funcao_for_range(last):
 	#for i in range(int(last)): 
 	for i in range(0,int(last)):
 		print(i)
-	else:
+	else: #util quando tem break
 		print("depois do loop do for = ",i)
 
 #func_arquivo("arq.txt")

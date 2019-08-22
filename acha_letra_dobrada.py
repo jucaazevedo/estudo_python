@@ -1,4 +1,4 @@
-def acha_palavra():
+def acha_letra_dobrada():
 	for linha in open("words.txt"):
 		anterior = ''
 		contador = 0
@@ -11,4 +11,4 @@ def acha_palavra():
 		if contador == 3:
 			print(linha)
 
-acha_palavra()
+acha_letra_dobrada()
