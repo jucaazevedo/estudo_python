@@ -1,6 +1,5 @@
 def tabulacao(a,b):
-	print('a = ', a)
-	print('b = ', b)
+    print('a = ', a)
+    print('b = ', b)
 
-tabulacao(10,
-		20)
+tabulacao(10,20)

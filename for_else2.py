@@ -1,13 +1,13 @@
 a = [10, 20, 30]
 for i in a:
-	print(i)
+    print(i)
 else:
-	print("saiu 1")
+    print("saiu 1")
 
 a = []
 for i in a:
-	print(i)
+    print(i)
 else:
-	print("saiu 2")
+    print("saiu 2")
 
 
