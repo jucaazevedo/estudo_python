@@ -10,8 +10,16 @@ import requests
 
 #r = requests.post('https://httpbin.org/post', data = {'key':'value'})
 
-parametros={'idList' : '1'}
-r = requests.get('http://localhost:31415/situacao', params=parametros)
+dados = { "signatureFileName": "assinatura.p7s", "documentFileName": "assinatura.p7s", "detailsLevel": 1, "generateReport": False, "extractOriginalContent": False }
+
+token = '5535b442be894fdcba4c1ad06e260b23'
+
+headers = {'token': token }
+
+r = requests.post('https://api-sbx.portaldeassinaturas.com.br/api/v2/SignatureVerifier/verifySignature', headers=headers, data=dados)
+
+#parametros={'idList' : '1357'}
+#r = requests.get('http://localhost:31415/situacao', params=parametros)
 
 print(r.status_code)
 print(r.url)
@@ -19,3 +27,4 @@ print(r.headers['content-type'])
 print(r.encoding)
 print(r.text)
 print(r.json())
+
