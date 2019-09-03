@@ -11,7 +11,7 @@ def imprime_dados_response(resp):
     print(resp.url)
     print(resp.headers['content-type'])
     print(resp.encoding)
-    print(resp.text)
+#    print(resp.text)
     print(resp.json())
     print('=================================================')
 
@@ -37,8 +37,17 @@ def listar_signatarios_documento(id_doc):
     resp = requests.get(url_request)
     imprime_dados_response(resp)
 
+def enviar_signatarios(id_doc):
+    url = 'https://secure.d4sign.com.br/api/v1/documents/{}/createlist?tokenAPI={}&cryptKey={}'
+    url_request = url.format(id_doc, token, cryptKey)
+    dados = '{"signers":[{"email":"jazevedo@simplesmenteuse.com","act":"1","foreign":"0","certificadoicpbr":"0","assinatura_presencial":"0"}]}'
+    resp = requests.post(url_request, data=dados)
+    imprime_dados_response(resp)
+
 # execucao 
 
-consulta_cofre()
-consulta_todos_documentos()
-listar_signatarios_documento('9daed4d5-a76e-4664-ab97-d823f22870f3')
+#consulta_cofre()
+#consulta_todos_documentos()
+#listar_signatarios_documento('9daed4d5-a76e-4664-ab97-d823f22870f3')
+enviar_signatarios('2fd0a2e3-b0e6-48ff-a380-7379a225805f')
+listar_signatarios_documento('2fd0a2e3-b0e6-48ff-a380-7379a225805f') #urso
