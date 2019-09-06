@@ -2,15 +2,17 @@ import requests
 import json
 
 def le_config():
-    f = open("../config_servicos")
+    f = open("../config_servicos_demo_jucaof")
     c = f.read()
     d = json.loads(c)
     global g_token
     global g_cryptKey
     global g_url
+    global g_cofre
     g_token = d["servicos"][0]["config"]["tokenAPI"]
     g_cryptKey = d["servicos"][0]["config"]["cryptKey"]
     g_url = d["servicos"][0]["config"]["url"]
+    g_cofre d["servicos"][0]["config"]["cofre"]
     print("g_token = ", g_token)
     print("g_cryptKey = ", g_cryptKey)
     print("g_url = ", g_url)
@@ -65,9 +67,9 @@ def enviar_signatarios(id_doc):
 # execucao 
 
 le_config()
-imprime_depois()
+#imprime_depois()
 consulta_cofre()
-consulta_todos_documentos()
-listar_signatarios_documento('9daed4d5-a76e-4664-ab97-d823f22870f3')
+#consulta_todos_documentos()
+#listar_signatarios_documento('9daed4d5-a76e-4664-ab97-d823f22870f3')
 #enviar_signatarios('2fd0a2e3-b0e6-48ff-a380-7379a225805f')
-listar_signatarios_documento('2fd0a2e3-b0e6-48ff-a380-7379a225805f') #urso
+#listar_signatarios_documento('2fd0a2e3-b0e6-48ff-a380-7379a225805f') #urso
