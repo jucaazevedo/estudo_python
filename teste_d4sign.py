@@ -2,7 +2,7 @@ import requests
 import json
 
 def le_config():
-    f = open("../config_servicos_demo_jucaof")
+    f = open("../config_servicos_demo_111343")
     c = f.read()
     d = json.loads(c)
     global g_token
@@ -12,7 +12,7 @@ def le_config():
     g_token = d["servicos"][0]["config"]["tokenAPI"]
     g_cryptKey = d["servicos"][0]["config"]["cryptKey"]
     g_url = d["servicos"][0]["config"]["url"]
-    g_cofre d["servicos"][0]["config"]["cofre"]
+    g_cofre = d["servicos"][0]["config"]["cofre"]
     print("g_token = ", g_token)
     print("g_cryptKey = ", g_cryptKey)
     print("g_url = ", g_url)
