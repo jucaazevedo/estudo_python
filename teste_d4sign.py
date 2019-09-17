@@ -35,7 +35,8 @@ def imprime_dados_response(resp):
     print(resp.url)
     print(resp.headers['content-type'])
     print(resp.encoding)
-#    print(resp.text)
+#    print(resp.text) 
+# text eh atributo e json() eh metodo
     print(resp.json())
     print('=================================================')
 
@@ -78,7 +79,7 @@ def upload_arquivo(id_cofre, docbase64):
     headers = {'Content-type': 'application/json'}
     resp = requests.post(url_request, data=dados_envio, headers=headers)
     imprime_dados_response(resp)
-#    ret_id_doc = resp.json['uuid']
+    ret_id_doc = resp.json()['uuid']
     return ret_id_doc
 
 def enviar_arquivo_para_assinatura(id_doc):
@@ -92,7 +93,8 @@ def enviar_arquivo_para_assinatura(id_doc):
 def cadastrar_webhook(id_doc):
     url = '{}/documents/{}/webhooks?tokenAPI={}&cryptKey={}'
     url_request = url.format(g_url, id_doc, g_token, g_cryptKey)
-    dados = '{"url" : "https://suse.requestcatcher.com"}'
+#    dados = '{"url" : "https://suse.requestcatcher.com"}'
+    dados = '{"url" : "http://d01.office1.simplesmenteuse.com.br/SuseToolsBatch/d4SignWebService"}'
     headers = {'Content-type': 'application/json'}
     resp = requests.post(url_request, data=dados, headers=headers)
     imprime_dados_response(resp)
@@ -104,6 +106,7 @@ le_config()
 #consulta_cofre()
 
 ret_id_arq = upload_arquivo(g_cofre, g_doc_base64)
+#ret_id_arq = 'e78080da-d926-495e-8f09-aa84e048ecca'
 enviar_signatarios(ret_id_arq)
 cadastrar_webhook(ret_id_arq)
 enviar_arquivo_para_assinatura(ret_id_arq)
