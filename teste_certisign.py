@@ -57,8 +57,10 @@ def enviar_signatarios(id_doc):
 def upload_arquivo(docbase64):
     url = '{}/document/upload'
     url_request = url.format(g_url)
-    dados = '{{"bytes" : "{docz}", "fileName" : "pdf_peq.pdf"}}'
-    dados_envio = dados.format(docz=docbase64)
+    bytes_upload = bytearray(docbase64, "ASCII")
+    #bytes_upload = bytes(docbase64)
+    dados = '{{"fileName" : "pdf_peq.pdf", "bytes" : eq.pdf"}}'
+    dados_envio = dados.format(docz=bytes_upload)
     print("dados_envio = ", dados_envio)
     headers = {'Content-type': 'application/json'}
     resp = requests.post(url_request, data=dados_envio, headers=headers)
