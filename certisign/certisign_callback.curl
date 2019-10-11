@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-type: application/json' 'localhost:8080/SuseToolsBatch/certiSignWebService' -d '{"documentId":183629,"name":"","identifier":"","action":"STEP-1","message":"","apiDownload":"https://api-sbx.portaldeassinaturas.com.br/api/v2/document/package?includeOriginal=true\u0026key=A3919C636A53C406"}'

@@ -1,0 +1,5 @@
+curl -v -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/StandardFlow/ListVisibleBySignerId?id=153977' 
+
+#curl -v -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/StandardFlow/ListVisibleBySignerId?id=152526' 
+
+

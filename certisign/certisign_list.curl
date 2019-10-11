@@ -1,0 +1,1 @@
+curl -X GET -H "Content-type: application/json" -H "Token: xpto" "https://api-sbx.portaldeassinaturas.com.br/api/v2/document/listByUser"

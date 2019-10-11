@@ -1,0 +1,3 @@
+#curl -v -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/document/flowactions?id=' 
+
+curl -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/document/details?id=186597' | python3 -m json.tool

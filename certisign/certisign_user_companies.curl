@@ -1,0 +1,6 @@
+#curl -v -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/User/Companies'
+
+curl -v -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/User/Companies'
+
+#curl -v -H 'Content-type: application/json' -H 'Token: xpto.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL0xpdmVJxpto.cE0gcXgduxkW7vBBchxpto-3YB0Ekkxpto-Qno-W39Faz5Nw3mVDyCm412Z4h2DKu-LLgQ1qIRsRHSsMqyUVk6yPZhY_2kzNZDUgyZiYOEgHO8jTX-H4Hp9a9j9ofKnhNHW3dPSCY6e7N-hsBwkb_k4KOoTiwgzd2cNXU-GgS3P4Wvb5CpXCbNC3r06CnaQdQV3-f0W_SzWzDhvnrt7rphLwMAbGzXrvkMj57Y6ifHpCSHEyEwbfR4kNw2qrlIDbwhTsR9PbiFKYoZHb8UGZpxg' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/User/Companies'
+

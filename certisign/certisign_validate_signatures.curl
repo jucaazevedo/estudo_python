@@ -1,0 +1,1 @@
+curl -H 'Content-type: application/json' -H 'Token: xpto' 'https://api-sbx.portaldeassinaturas.com.br/api/v2/document/ValidateSignatures?key=D8A8AE9A1258B56C' | python3 -m json.tool

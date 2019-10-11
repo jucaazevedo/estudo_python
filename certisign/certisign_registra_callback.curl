@@ -1,0 +1,1 @@
+curl -X POST -H "Content-type: application/json" -H "Token: xpto" https://api-sbx.portaldeassinaturas.com.br/api/v2/Callback/Create -d '{"clientId":1, "email":"jazevedo@simplesmenteuse.com", "uri": "http://d01.office1.simplesmenteuse.com.br/SuseToolsBatch/d4SignWebService", "documentTrigger": 0}'

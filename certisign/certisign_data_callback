@@ -1,0 +1,1 @@
+'{ "clientId": 1, "description": "teste", "email": "jazevedo@simplesmenteuse.com", "uri": "http://d01.office1.simplesmenteuse.com.br/SuseToolsBatch/d4SignWebService", "documentTrigger": 0, "registeredEmailTrigger": 0, "headers": [ { "key": "Content-Type", "value": "application/json" } ] }'

@@ -1,0 +1,128 @@
+{
+  "documents": [
+    {
+      "typeId": 0,
+      "document": {
+        "name": "string",
+        "upload": {
+          "id": "string",
+          "name": "string"
+        }
+      },
+      "fields": [
+        {
+          "valueId": 0,
+          "value": "string",
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "attachments": [
+        {
+          "associatedAttachmentId": 0,
+          "description": "string",
+          "upload": {
+            "id": "string",
+            "name": "string"
+          },
+          "bytes": [
+            0
+          ]
+        }
+      ],
+      "accountId": 0,
+      "folderId": 0,
+      "signatureFormatId": 0,
+      "callback": true,
+      "sender": {
+        "name": "string",
+        "email": "string",
+        "individualIdentificationCode": "string"
+      },
+      "signers": [
+        {
+          "id": 0,
+          "title": "string",
+          "step": 0,
+          "uid": "string",
+          "name": "string",
+          "email": "string",
+          "individualIdentificationCode": "string"
+        }
+      ],
+      "electronicSigners": [
+        {
+          "id": 0,
+          "title": "string",
+          "step": 0,
+          "uid": "string",
+          "name": "string",
+          "email": "string",
+          "individualIdentificationCode": "string",
+          "inPerson": true,
+          "identificationType": {
+            "accessCode": true
+          },
+          "accessCode": "string"
+        }
+      ],
+      "serverSigners": [
+        {
+          "step": 0,
+          "certificateId": 0
+        }
+      ],
+      "observers": [
+        {
+          "id": 0,
+          "title": "string",
+          "step": 0,
+          "uid": "string",
+          "name": "string",
+          "email": "string",
+          "individualIdentificationCode": "string"
+        }
+      ],
+      "finishers": [
+        {
+          "id": 0,
+          "title": "string",
+          "step": 0,
+          "uid": "string",
+          "name": "string",
+          "email": "string",
+          "individualIdentificationCode": "string"
+        }
+      ],
+      "representatives": [
+        {
+          "id": 0,
+          "title": "string",
+          "step": 0,
+          "signatureDeadlineInWorkdays": "string",
+          "signatureDeadlineDate": "string"
+        }
+      ],
+      "globalObservers": [
+        {
+          "id": 0,
+          "uid": "string",
+          "name": "string",
+          "email": "string",
+          "individualIdentificationCode": "string"
+        }
+      ],
+      "recipients": {
+        "emails": "string",
+        "attached": true
+      },
+      "notifiedList": {
+        "emails": "string",
+        "message": "string"
+      },
+      "tags": [
+        "string"
+      ]
+    }
+  ]
+}
