@@ -10,6 +10,6 @@ resultado = x * y
 resposta = int(input())
 
 if (resposta == resultado):
-	print("Você acertou")
+	print("Você acertou!")
 else:
-	print("Você errou")
+	print("Você errou!")
